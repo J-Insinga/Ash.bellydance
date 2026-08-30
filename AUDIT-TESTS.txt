@@ -1,0 +1,94 @@
+BY FIGGY — AUDIT TECHNIQUE FINAL
+================================
+
+Contrôles exécutés : 61
+Réussis : 61
+Échecs réels après corrections : 0
+
+CORRECTIONS MAJEURES APPLIQUÉES
+- Images ATE recadrées proprement.
+- Panier accessible depuis la page complète des workshops.
+- Réservation directe sur les 7 dates.
+- Bouton X du panier reconnecté.
+- Backend PayPal multi-lignes aligné avec le panier.
+- approvalUrl / return_url / cancel_url ajoutés.
+- Vérification du montant PayPal à la capture.
+- Enregistrement de toutes les lignes du panier.
+- Route Contact avec validation, rate limiting et SMTP.
+- .env livré sans secrets ni faux identifiants.
+- Traductions FR/EN/ES/IT/DE/AR complétées.
+- Prix localisés selon la langue.
+- RTL arabe, focus clavier et focus trap modales.
+- Breakpoints responsive harmonisés.
+- Bandeau cookies inutile retiré.
+
+DÉTAIL DES CONTRÔLES
+[OK] Syntaxe JS — server.js
+[OK] Syntaxe JS — public/script.js
+[OK] Syntaxe JS — public/i18n.js
+[OK] Syntaxe JS — public/translations.js
+[OK] Syntaxe JS — public/contact.js
+[OK] Syntaxe JS — public/page.js
+[OK] Syntaxe JS — tests/server.test.js
+[OK] Logique serveur — panier valide/invalide/merge/prix/origine — Tests serveur BY FIGGY : OK
+[OK] HTML — IDs uniques — conditions-reservation.html — []
+[OK] HTML — liens locaux — conditions-reservation.html — []
+[OK] HTML — assets/scripts — conditions-reservation.html — []
+[OK] HTML — IDs uniques — confidentialite.html — []
+[OK] HTML — liens locaux — confidentialite.html — []
+[OK] HTML — assets/scripts — confidentialite.html — []
+[OK] HTML — IDs uniques — contact.html — []
+[OK] HTML — liens locaux — contact.html — []
+[OK] HTML — assets/scripts — contact.html — []
+[OK] HTML — IDs uniques — event.html — []
+[OK] HTML — liens locaux — event.html — []
+[OK] HTML — assets/scripts — event.html — []
+[OK] HTML — IDs uniques — index.html — []
+[OK] HTML — liens locaux — index.html — []
+[OK] HTML — assets/scripts — index.html — []
+[OK] HTML — IDs uniques — mentions-legales.html — []
+[OK] HTML — liens locaux — mentions-legales.html — []
+[OK] HTML — assets/scripts — mentions-legales.html — []
+[OK] Réservation/panier — hooks complets — index.html — []
+[OK] Panier — bouton X connecté — index.html
+[OK] Réservation/panier — hooks complets — event.html — []
+[OK] Panier — bouton X connecté — event.html
+[OK] Planning — toutes les dates réservent directement — 7 dates
+[OK] Traductions — FR — 148 clés — []
+[OK] Traductions — EN — 148 clés — []
+[OK] Traductions — ES — 148 clés — []
+[OK] Traductions — IT — 148 clés — []
+[OK] Traductions — DE — 148 clés — []
+[OK] Traductions — AR — 148 clés — []
+[OK] RTL arabe activé
+[OK] Contact — options sujet traduisibles
+[OK] CSS — parsing sans erreur — []
+[OK] Responsive — desktop/tablette/mobile/petit mobile/paysage
+[OK] Responsive — breakpoint menu JS/CSS cohérent
+[OK] Accessibilité — focus visible
+[OK] Accessibilité — focus trap modales
+[OK] Image ATE — ate-attitude.jpg — 988x854, RGB
+[OK] Image ATE — ate-technique.jpg — 988x854, RGB
+[OK] Image ATE — ate-energy.jpg — 988x854, RGB
+[OK] Backend — client envoie tout le panier
+[OK] Backend — serveur valide tout le panier
+[OK] PayPal — approvalUrl renvoyée
+[OK] PayPal — URL retour configurée
+[OK] PayPal — URL annulation configurée
+[OK] PayPal — montant capturé vérifié
+[OK] PayPal — toutes lignes enregistrées
+[OK] Contact — route API présente
+[OK] Contact — SMTP requis avant succès
+[OK] Sécurité — CSP Helmet
+[OK] Sécurité — rate limit paiement
+[OK] Sécurité — same-origin paiement
+[OK] Sécurité — secrets PayPal absents du .env livré
+[OK] Sécurité — .env ignoré par Git
+
+TESTS EXTERNES NON EXÉCUTABLES DANS CE CONTENEUR
+[NON EXÉCUTABLE] npm install : tentative effectuée, registre npm inaccessible (timeout).
+[NON EXÉCUTABLE] Chromium interactif : Chromium présent, mais navigation localhost/file/data bloquée par politique administrateur.
+
+À TESTER AVEC TES IDENTIFIANTS
+- Paiement PayPal Sandbox réel.
+- Envoi e-mail SMTP réel.

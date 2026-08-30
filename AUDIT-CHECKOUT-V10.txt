@@ -1,0 +1,52 @@
+BY FIGGY — AUDIT CHECKOUT V10
+=============================
+
+Contrôles : 35
+Réussis : 35
+Échecs : 0
+
+MODIFICATIONS
+- Checkout visuellement compact et premium.
+- Suppression définitive des champs prénom/e-mail avant PayPal.
+- Résumé de réservation plus lisible.
+- Total plus visible.
+- Bouton PayPal unique et clair.
+- Note de sécurité bancaire.
+- Responsive mobile et RTL arabe.
+- Le clic direct RÉSERVER continue de tenter la redirection PayPal immédiatement.
+- Le checkout ne s'affiche que pour le panier ou si PayPal renvoie une erreur.
+[OK] Syntaxe server.js
+[OK] Syntaxe public/script.js
+[OK] Syntaxe public/i18n.js
+[OK] Syntaxe public/translations.js
+[OK] Syntaxe public/contact.js
+[OK] Syntaxe public/page.js
+[OK] index.html cartModal
+[OK] index.html cartClose
+[OK] index.html cartItems
+[OK] index.html cartEmpty
+[OK] index.html cartSummary
+[OK] index.html cartTotal
+[OK] index.html cartCheckoutForm
+[OK] index.html cartPayPalButton
+[OK] index.html cartMessage
+[OK] index.html aucun prénom/email
+[OK] index.html nouveau checkout
+[OK] event.html cartModal
+[OK] event.html cartClose
+[OK] event.html cartItems
+[OK] event.html cartEmpty
+[OK] event.html cartSummary
+[OK] event.html cartTotal
+[OK] event.html cartCheckoutForm
+[OK] event.html cartPayPalButton
+[OK] event.html cartMessage
+[OK] event.html aucun prénom/email
+[OK] event.html nouveau checkout
+[OK] fr nouvelles traductions
+[OK] en nouvelles traductions
+[OK] es nouvelles traductions
+[OK] it nouvelles traductions
+[OK] de nouvelles traductions
+[OK] ar nouvelles traductions
+[OK] CSS parse — []

@@ -1,0 +1,171 @@
+BY FIGGY — AUDIT FINAL V8
+=========================
+
+Contrôles exécutés : 141
+Réussis : 141
+Échecs : 0
+
+CORRECTIONS APPLIQUÉES
+- Français forcé comme langue initiale.
+- Ancienne préférence locale pouvant forcer l'arabe neutralisée.
+- Les choix de langue manuels restent mémorisés avec une nouvelle clé.
+- Breakpoints JS/CSS harmonisés à 1024 px.
+- Police arabe Noto Naskh ajoutée sur toutes les pages.
+- ARIA de navigation, langue, fermeture et retour haut traduisibles.
+- Code cookies mort supprimé.
+- Fallback ajouté si IntersectionObserver n'est pas disponible.
+- Ancien vert fluorescent ATE supprimé au profit du rose/prune BY FIGGY.
+- README entièrement réécrit pour correspondre à la version actuelle.
+- Paiement, panier, contact, pages légales, traductions et responsive revérifiés.
+
+DÉTAIL DES CONTRÔLES
+[OK] Syntaxe JS — server.js
+[OK] Syntaxe JS — public/script.js
+[OK] Syntaxe JS — public/i18n.js
+[OK] Syntaxe JS — public/translations.js
+[OK] Syntaxe JS — public/contact.js
+[OK] Syntaxe JS — public/page.js
+[OK] Syntaxe JS — tests/server.test.js
+[OK] npm run check — 
+> by-figgy@1.0.0 check
+> node --check server.js && node --check public/script.js && node --check public/i18n.js && node --check public/translations.js && node --check public/contact.js && node --check public/page.js
+
+
+[OK] conditions-reservation.html — IDs uniques — []
+[OK] conditions-reservation.html — viewport
+[OK] conditions-reservation.html — fallback FR
+[OK] conditions-reservation.html — police arabe
+[OK] conditions-reservation.html — aucun faux nonce
+[OK] conditions-reservation.html — 6 langues
+[OK] conditions-reservation.html — nav aria multilingue
+[OK] conditions-reservation.html — liens/assets locaux — []
+[OK] confidentialite.html — IDs uniques — []
+[OK] confidentialite.html — viewport
+[OK] confidentialite.html — fallback FR
+[OK] confidentialite.html — police arabe
+[OK] confidentialite.html — aucun faux nonce
+[OK] confidentialite.html — 6 langues
+[OK] confidentialite.html — nav aria multilingue
+[OK] confidentialite.html — liens/assets locaux — []
+[OK] contact.html — IDs uniques — []
+[OK] contact.html — viewport
+[OK] contact.html — fallback FR
+[OK] contact.html — police arabe
+[OK] contact.html — aucun faux nonce
+[OK] contact.html — 6 langues
+[OK] contact.html — nav aria multilingue
+[OK] contact.html — liens/assets locaux — []
+[OK] event.html — IDs uniques — []
+[OK] event.html — viewport
+[OK] event.html — fallback FR
+[OK] event.html — police arabe
+[OK] event.html — aucun faux nonce
+[OK] event.html — 6 langues
+[OK] event.html — nav aria multilingue
+[OK] event.html — liens/assets locaux — []
+[OK] index.html — IDs uniques — []
+[OK] index.html — viewport
+[OK] index.html — fallback FR
+[OK] index.html — police arabe
+[OK] index.html — aucun faux nonce
+[OK] index.html — 6 langues
+[OK] index.html — nav aria multilingue
+[OK] index.html — liens/assets locaux — []
+[OK] mentions-legales.html — IDs uniques — []
+[OK] mentions-legales.html — viewport
+[OK] mentions-legales.html — fallback FR
+[OK] mentions-legales.html — police arabe
+[OK] mentions-legales.html — aucun faux nonce
+[OK] mentions-legales.html — 6 langues
+[OK] mentions-legales.html — nav aria multilingue
+[OK] mentions-legales.html — liens/assets locaux — []
+[OK] FR — mêmes clés
+[OK] FR — clés utilisées présentes — []
+[OK] FR — aucune traduction vide
+[OK] EN — mêmes clés
+[OK] EN — clés utilisées présentes — []
+[OK] EN — aucune traduction vide
+[OK] ES — mêmes clés
+[OK] ES — clés utilisées présentes — []
+[OK] ES — aucune traduction vide
+[OK] IT — mêmes clés
+[OK] IT — clés utilisées présentes — []
+[OK] IT — aucune traduction vide
+[OK] DE — mêmes clés
+[OK] DE — clés utilisées présentes — []
+[OK] DE — aucune traduction vide
+[OK] AR — mêmes clés
+[OK] AR — clés utilisées présentes — []
+[OK] AR — aucune traduction vide
+[OK] Langue initiale — français
+[OK] Ancien choix AR neutralisé
+[OK] Arabe — RTL
+[OK] Prix — localisation EUR
+[OK] index.html — hooks panier/réservation — []
+[OK] index.html — fermeture booking
+[OK] index.html — fermeture panier
+[OK] index.html — quantité 1–4
+[OK] event.html — hooks panier/réservation — []
+[OK] event.html — fermeture booking
+[OK] event.html — fermeture panier
+[OK] event.html — quantité 1–4
+[OK] index.html — dates réservation valides — []
+[OK] event.html — dates réservation valides — []
+[OK] event.html — 7 dates
+[OK] Coaching — 3 offres
+[OK] Call découverte — gratuit 15min
+[OK] Consulting — 99.99
+[OK] Coaching — 199.99
+[OK] assets/ate-attitude.jpg — image valide — 988x854
+[OK] assets/ate-attitude.jpg — alt traduit
+[OK] assets/ate-technique.jpg — image valide — 988x854
+[OK] assets/ate-technique.jpg — alt traduit
+[OK] assets/ate-energy.jpg — image valide — 988x854
+[OK] assets/ate-energy.jpg — alt traduit
+[OK] CSS — parsing — []
+[OK] Responsive — max-width: 1024px
+[OK] Responsive — max-width: 700px
+[OK] Responsive — max-width: 430px
+[OK] Responsive — max-height: 560px
+[OK] ATE — aucun vert fluo
+[OK] Accessibilité — focus visible
+[OK] Accessibilité — reduced motion
+[OK] Menu principal — breakpoint 1024
+[OK] Pages secondaires — breakpoint 1024
+[OK] Modales — focus trap
+[OK] Reveal — fallback navigateur
+[OK] Code cookies mort retiré
+[OK] Contact — contactForm
+[OK] Contact — contactFirstName
+[OK] Contact — contactEmail
+[OK] Contact — contactSubject
+[OK] Contact — contactMessage
+[OK] Contact — contactSubmit
+[OK] Contact — contactFormMessage
+[OK] Contact — sujets traduits
+[OK] Contact — API utilisée
+[OK] Serveur — PayPal panier multi-lignes
+[OK] Serveur — PayPal create order
+[OK] Serveur — PayPal capture
+[OK] Serveur — PayPal approvalUrl
+[OK] Serveur — PayPal return_url
+[OK] Serveur — PayPal cancel_url
+[OK] Serveur — PayPal vérif montant
+[OK] Serveur — PayPal quantité max 4
+[OK] Serveur — Contact API
+[OK] Serveur — SMTP
+[OK] Serveur — Helmet CSP
+[OK] Serveur — Rate limit PayPal
+[OK] Serveur — Same origin PayPal
+[OK] Serveur — Same origin Contact
+[OK] Serveur — Static public
+[OK] Serveur — Route index
+[OK] .env — sandbox
+[OK] .env — secrets vides
+[OK] .gitignore — .env
+[OK] Tests serveur — panier/prix/origine — Tests serveur BY FIGGY : OK
+
+TESTS QUI NÉCESSITENT TES IDENTIFIANTS / UN RÉSEAU EXTERNE
+- Paiement PayPal Sandbox réel : nécessite PAYPAL_CLIENT_ID et PAYPAL_CLIENT_SECRET.
+- Envoi SMTP réel : nécessite SMTP_HOST, SMTP_USER et SMTP_PASS.
+- Ces deux flux sont contrôlés statiquement et côté logique, mais aucun secret n'est inclus dans le dossier.

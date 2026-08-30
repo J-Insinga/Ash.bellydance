@@ -1,0 +1,59 @@
+BY FIGGY — AUDIT PAYPAL DIRECT V9
+================================
+
+Contrôles : 43
+Réussis : 43
+Échecs : 0
+
+FLUX FINAL
+- Clic sur RÉSERVER => création immédiate de la commande => redirection PayPal.
+- Aucun questionnaire prénom/e-mail avant PayPal.
+- Un clic direct réserve 1 place.
+- Le panier reste utilisable pour regrouper plusieurs lignes.
+- À la confirmation, le serveur récupère les informations disponibles depuis PayPal.
+- Si PayPal n'est pas configuré ou répond en erreur, le panier s'ouvre avec le message d'erreur.
+
+DÉTAIL
+[OK] Syntaxe server.js
+[OK] Syntaxe public/script.js
+[OK] Syntaxe public/i18n.js
+[OK] Syntaxe public/translations.js
+[OK] Syntaxe public/contact.js
+[OK] Syntaxe public/page.js
+[OK] Syntaxe tests/server.test.js
+[OK] index.html: aucun formulaire réservation intermédiaire
+[OK] index.html: aucun champ prénom panier
+[OK] index.html: aucun champ email panier
+[OK] index.html: boutons réserver présents — 6
+[OK] index.html: bouton PayPal panier
+[OK] event.html: aucun formulaire réservation intermédiaire
+[OK] event.html: aucun champ prénom panier
+[OK] event.html: aucun champ email panier
+[OK] event.html: boutons réserver présents — 8
+[OK] event.html: bouton PayPal panier
+[OK] JS: clic réserver appelle PayPal direct
+[OK] JS: réservation directe force 1 place
+[OK] JS: clic réserver ne lance plus openBooking
+[OK] JS: create-order sans prénom/email
+[OK] JS: capture envoie seulement orderId
+[OK] JS: erreur PayPal visible dans panier
+[OK] Serveur: capture n'exige plus prénom/email
+[OK] Serveur: récupère prénom PayPal
+[OK] Serveur: récupère email PayPal
+[OK] Serveur: vérifie toujours montant
+[OK] Serveur: limite toujours quantité
+[OK] Serveur: create order panier
+[OK] fr: payWithPayPal traduit
+[OK] en: payWithPayPal traduit
+[OK] es: payWithPayPal traduit
+[OK] it: payWithPayPal traduit
+[OK] de: payWithPayPal traduit
+[OK] ar: payWithPayPal traduit
+[OK] CSS sans erreur — []
+[OK] conditions-reservation.html: liens/assets — []
+[OK] index.html: liens/assets — []
+[OK] event.html: liens/assets — []
+[OK] confidentialite.html: liens/assets — []
+[OK] contact.html: liens/assets — []
+[OK] mentions-legales.html: liens/assets — []
+[OK] Tests serveur panier/prix/origine — Tests serveur BY FIGGY : OK

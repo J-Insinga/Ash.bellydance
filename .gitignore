@@ -1,0 +1,8 @@
+.env
+node_modules/
+npm-debug.log*
+.DS_Store
+Thumbs.db
+data/pending-orders.json
+data/reservations.json
+data/contact-messages.json
